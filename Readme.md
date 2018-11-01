@@ -12,10 +12,10 @@ We were instructed to implement 4 sorting algorithms (Quicksort, Mergesort and 2
 
 #### Compile and run
 
-Run ```./run.sh``` inside the directory of the algorithm you wish to test.
+Run ```./run.sh``` on the base directory or, run ```./run.sh``` inside the directory of the algorithm you wish to test.
 
-This will run it and output it's execution time into a log-file called ```output.txt``` inside the algorithm's directory.
+This will compile and run each one and output it's execution time into a log-file called ```output.txt``` inside the algorithm's directory.
 
 #### Clear all log files and binaries
 
-Run ```./clear.sh```
+Run ```./clear.sh``` on the base directory.
