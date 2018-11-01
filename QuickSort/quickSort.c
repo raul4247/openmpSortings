@@ -71,8 +71,15 @@ int main(void){
 
 int* fillArray(int *array, int size){
     int i;
+
+    int ret = 1;
+
     for(i=0;i<size;i++)
-        scanf("%i", &array[i]);
+    {
+        ret = scanf("%i", &array[i]);
+
+        if (ret != 1) break;
+    }
 }
 
 // A utility function to swap two elements 

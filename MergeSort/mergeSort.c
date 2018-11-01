@@ -59,11 +59,17 @@ int main(int argc, char const *argv[]){
  	return 0;
 }
 
-
 int* fillArray(int *array, int size){
     int i;
+
+    int ret = 1;
+
     for(i=0;i<size;i++)
-        scanf("%i", &array[i]);
+    {
+        ret = scanf("%i", &array[i]);
+
+        if (ret != 1) break;
+    }
 }
 
 void parallelMerge(int arr[], int l, int m, int r){
